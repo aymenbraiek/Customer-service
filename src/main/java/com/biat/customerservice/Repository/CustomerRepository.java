@@ -1,9 +1,10 @@
-package com.biat.customerservice.Repository;
+package com.biat.customerservice.repository;
 
-import com.biat.customerservice.Model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.data.rest.webmvc.RepositoryRestController;
 
-@RepositoryRestResource
-public interface CustomerRepository extends JpaRepository<Customer,Long> {
+import com.biat.customerservice.model.Customer;
+@RepositoryRestController
+public interface CustomerRepository extends JpaRepository<Customer, Long>{
+
 }
